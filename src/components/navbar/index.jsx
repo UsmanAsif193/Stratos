@@ -9,6 +9,7 @@ const NavbarItem = ({ title, classProps, link }) => {
   );
 };
 
+
 const Navbar = ({ blackColor }) => {
   const [toggleMenu, setToggleMenu] = useState(false);
   return (
