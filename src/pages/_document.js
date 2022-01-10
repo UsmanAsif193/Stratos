@@ -6,6 +6,7 @@ export default class MyDocument extends Document {
       <Html>
         <Head>
           {/* Font-Style google */}
+          <link rel="icon" href="/assets/logo.png"/> 
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
           <link
@@ -19,7 +20,8 @@ export default class MyDocument extends Document {
             integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
             crossOrigin="anonymous"
           />
-          <title>Stratos</title>
+          <title>Welcome to Stratos | Stratos</title>
+          <link rel="icon"/>
         </Head>
         <body>
           <Main />

@@ -1,4 +1,5 @@
 import React from "react";
+import SuccessCard from '../SuccessCard/SuccessCard';
 
 const JoinStratos = () => {
   return (
@@ -27,7 +28,7 @@ const JoinStratos = () => {
             />
             <div className="  absolute top-0 right-0">
               {" "}
-              <button className="h-12 w-28 md:h-12 md:w-40 text-black text-lg rounded-lg bg-white hover:bg-black hover:text-white hover:border-white hover:border-2">
+              <button onClick={SuccessCard} className="h-12 w-28 md:h-12 md:w-40 text-black text-lg rounded-lg bg-white hover:bg-black hover:text-white hover:border-white hover:border-2">
                 Join
               </button>{" "}
             </div>

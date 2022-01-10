@@ -1,5 +1,6 @@
 import React from "react";
 import Zoom from "react-reveal/Zoom";
+import SuccessCard from '../SuccessCard/SuccessCard';
 
 
 const InputQuest = ({ placeholder, type, className }) => {
@@ -106,7 +107,7 @@ const QuestList = () => {
               </div>
             </div>
           </form>
-          <button className="bg-black hover:bg-gray-700 text-white font-semibold py-2 px-16 rounded-xl border-0 shadow-md-full">
+          <button onClick={SuccessCard} className="bg-black hover:bg-gray-700 text-white font-semibold py-2 px-16 rounded-xl border-0 shadow-md-full">
             Register
           </button>
         </div>

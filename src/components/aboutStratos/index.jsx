@@ -8,7 +8,7 @@ const AboutStratos = () => {
         className="min-h-screen bg-about-startos bg-cover overflow-hidden"
         id="about-stratos"
       >
-        <div className=" md:mt-0 md:p-20 md:pb-0 md:py-12 md:px-4 min-h-screen">
+        <div  className=" md:mt-0 md:p-20 md:pb-0 md:py-12 md:px-4 min-h-screen">
           <div className="p-20 pb-0 md:pl-20 px-4 mt-24 md:mt-0 h-full">
             <div className="flex w-full justify-center items-center">
               <h1 className="tracking-[.7rem] uppercase font-light text-2xl">
@@ -16,13 +16,13 @@ const AboutStratos = () => {
               </h1>
             </div>
             <div className="grid grid-cols-1 mf:grid-cols-2 items-center justify-between h-full mt-12 md:mt-0">
-              <div className="w-10/12 ml-12 md:row-start-1">
+              <div style={{marginBottom: 230}}  className="w-10/12 ml-12 md:row-start-1">
                 <div className="my-6 sm:my-12">
                   <h2 className="text-3xl md:text-4xl font-semibold mb-4">
                     Who we are
                   </h2>
                   <p className="text-lg md:text-xl font-light w-11/12">
-                    Stratosx is a web-based platform offering professional
+                    Stratos  offering professional
                     networking, mentorship and support to Black and Latinx
                     professionals.
                   </p>
