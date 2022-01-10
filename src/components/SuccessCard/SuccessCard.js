@@ -5,18 +5,20 @@ const SuccessCard = () => {
     const Toast = Swal.mixin({
         toast: true,
         position: 'top-end',
+        color: "white",
         showConfirmButton: false,
         timer: 3000,
+        background: 'gray',
         timerProgressBar: false,
         didOpen: (toast) => {
           toast.addEventListener('mouseenter', Swal.stopTimer)
           toast.addEventListener('mouseleave', Swal.resumeTimer)
         }
       })
-      
+
       Toast.fire({
         icon: 'success',
-        title: 'Success'
+        title: 'Success',
       })
 
 return(

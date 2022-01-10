@@ -17,7 +17,7 @@ const SocialClub = () => {
       >
         <div className="grid grid-cols-1 mf:grid-cols-2 items-center justify-between md:mt-0 md:p-20 md:py-12 md:px-4">
           <div className="flex flex-col justify-evenly items-center h-full md:pl-20 px-4 mt-24 md:mt-0">
-            <h1 className="tracking-[.7rem] uppercase font-extralight text-xl">
+            <h1  className="tracking-[.7rem] uppercase font-extralight text-xl">
               Stratos
             </h1>
             <img
@@ -34,7 +34,7 @@ const SocialClub = () => {
               <p className="text-xl mt-12 md:mt-0">
                 Join us to recognize the strength of the Black and Latinx
                 professional journey, celebrate your successes and connect with
-                others who are ready to take their careers to the next level.
+                others who are ready to take their careers to the next level. Ages 21-25.
               </p>
             </div>
             <div className="my-12 md:my-0">

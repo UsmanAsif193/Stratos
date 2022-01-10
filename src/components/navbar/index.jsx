@@ -19,7 +19,7 @@ const Navbar = ({ blackColor }) => {
             blackColor && "text-black"
           } tracking-[.7rem] uppercase font-extralight`}
         >
-          <Link href={"/"}>Stratos</Link>
+          <Link  style={{color: "black"}} href={"/"}>Stratos</Link>
         </h1>
         <div>
           <ul className="flex">
@@ -30,7 +30,7 @@ const Navbar = ({ blackColor }) => {
         </div>
         <div className="cursor-pointer">
           <NavbarItem
-            title={"Contact Us"}
+            title={"Sign Up"}
             classProps={`list-none ${blackColor && "text-[#4a9fb1]"}`}
             link="/contactUs"
           />
@@ -38,7 +38,7 @@ const Navbar = ({ blackColor }) => {
       </div>
       <div className=" md:hidden">
         <div className="flex justify-between">
-          <h1 className="tracking-[.7rem] uppercase font-extralight">
+          <h1  className="tracking-[.7rem] uppercase font-extralight">
             Stratos
           </h1>
           <i
@@ -66,6 +66,7 @@ const Navbar = ({ blackColor }) => {
                 link="/#about-stratos"
                 classProps="my-2 text-lg"
               />
+              
               <NavbarItem
                 title={"The Social Club"}
                 link="/#social-club"

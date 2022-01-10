@@ -53,15 +53,9 @@ const OurPartners = () => {
         </div>
         <div className="flex md:items-start justify-center flex-col">
           <div className="flex items-center justify-center my-4">
-            <i
-              className="fa fa-envelope mx-2 text-[#72c0c9] text-xl"
-              aria-hidden="true"
-            ></i>
-            <h3>info@meetandinnovate.com</h3>
+
           </div>
           <div className="flex items-center justify-center">
-            <i className="fas fa-phone mx-2 text-[#72c0c9] text-xl"></i>
-            <h3>770-744-5726</h3>
           </div>
         </div>
       </section>
