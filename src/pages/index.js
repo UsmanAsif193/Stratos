@@ -30,9 +30,7 @@ const Home = () => {
       <AboutStratos />
       <OurPartners />
     </div>
-    <h1 style={{marginBottom: 300}} className="tracking-[.7rem] uppercase font-light text-2xl md:text-3xl text-center">
-         Follow our progress
-          </h1>
+    
         </div>
 
   );

@@ -22,7 +22,7 @@ const Navbar = ({ blackColor }) => {
           <Link  style={{color: "black"}} href={"/"}>Stratos</Link>
         </h1>
         <div>
-          <ul className="flex">
+          <ul style={{color: "white"}} className="flex">
             <NavbarItem title={"Home"} link="/" />
             <NavbarItem title={"About Stratos"} link="/#about-stratos" />
             <NavbarItem title={"The Social Club"} link="/#social-club" />
@@ -31,7 +31,7 @@ const Navbar = ({ blackColor }) => {
         <div className="cursor-pointer">
           <NavbarItem
             title={"Sign Up"}
-            classProps={`list-none ${blackColor && "text-[#4a9fb1]"}`}
+            classProps={`list-none ${blackColor && "text-[black]"}`}
             link="/contactUs"
           />
         </div>
