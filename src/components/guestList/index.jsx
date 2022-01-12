@@ -60,7 +60,7 @@ const QuestList = () => {
             <div>
               <h3 className="text-3xl font-bold">When & Where</h3>
               <p className="text-lg font-light">
-                7pm Saturday January 29th in Atlanta, Georgia
+                7pm Saturday February 26th in Atlanta, Georgia
               </p>
               <p>Address will be sent to email inbox</p>
             </div>
