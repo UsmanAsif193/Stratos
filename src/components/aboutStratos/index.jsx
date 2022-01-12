@@ -22,7 +22,7 @@ const AboutStratos = () => {
                     Who we are
                   </h2>
                   <p className="text-lg md:text-xl font-light w-11/12">
-                    Stratos  offering professional
+                    Stratos offers professional
                     networking, mentorship and support to Black and Latinx
                     professionals.
                   </p>
