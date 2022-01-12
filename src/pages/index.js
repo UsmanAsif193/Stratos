@@ -24,7 +24,7 @@ const Home = () => {
       <div className="h-screen bg-cloud-image-index bg-cover text-white">
       <Hero />
       </div>
-      <contactUs />
+      <signUp />
       <GuestList />
       <Schedule />
       <AboutStratos />

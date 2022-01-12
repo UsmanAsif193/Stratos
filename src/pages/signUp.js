@@ -4,7 +4,7 @@ import Navbar from "../components/navbar";
 import GuestList from "../components/guestList";
 import OurPartners from "../components/ourPartners";
 
-const contactUs = () => {
+const signUp = () => {
   return (
     <div   className="min-h-screen">
       <Fade top>
@@ -18,4 +18,4 @@ const contactUs = () => {
   );
 };
 
-export default contactUs;
+export default signUp;

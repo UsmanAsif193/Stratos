@@ -32,7 +32,7 @@ const Navbar = ({ blackColor }) => {
           <NavbarItem
             title={"Sign Up"}
             classProps={`list-none ${blackColor && "text-[black]"}`}
-            link="/contactUs"
+            link="/signUp"
           />
         </div>
       </div>
@@ -77,7 +77,7 @@ const Navbar = ({ blackColor }) => {
                 classProps={`list-none my-2 text-lg ${
                   blackColor && "text-[#4a9fb1]"
                 }`}
-                link="/#contactUs"
+                link="/#signUp"
               />
             </ul>
           )}

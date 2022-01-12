@@ -24,7 +24,7 @@ const Hero = () => {
 
   //Enter the date of release in mm/dd/yyyy
   useEffect(() => {
-    setDateToGet("01/29/2022");
+    setDateToGet("02/26/2022");
   });
   return (
     <Fade top>
