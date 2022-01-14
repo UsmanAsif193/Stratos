@@ -41,7 +41,7 @@ const Hero = () => {
           FIRST LINK UP OF THE YEAR:{" "}
           <span className="font-normal">ATLANTA, GA</span>
         </h2>
-        <div className="items-center justify-center text-lg md:text-3xl flex">
+        <div  style={{marginRight: 50}}  className="items-center justify-center text-lg md:text-3xl flex">
           <div className="flex flex-col items-center justify-center mx-2 md:mx-8">
             <span className="text-2xl md:text-7xl font-bold">
               {timeLeft.days}
@@ -68,7 +68,9 @@ const Hero = () => {
           </div>
         </div>
         <div className="font-light tracking-[.6rem] text-xl sm:text-2xl">
-          {dateToGet && dateToGet.replaceAll("/", ".")}
+          <div>
+
+          </div>
         </div>
       </section>
     </Fade>

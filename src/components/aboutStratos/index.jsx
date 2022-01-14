@@ -5,7 +5,7 @@ const AboutStratos = () => {
   return (
     <Fade bottom>
       <section
-        className="min-h-screen bg-about-startos bg-cover overflow-hidden"
+        className="overflow-hidden"
         id="about-stratos"
       >
         <div  className=" md:mt-0 md:p-20 md:pb-0 md:py-12 md:px-4 min-h-screen">
@@ -15,7 +15,7 @@ const AboutStratos = () => {
                 Strat<span className="text-[#45A5AE]">o</span>s
               </h1>
             </div>
-            <div style={{marginTop: 150}} className="grid grid-cols-1 mf:grid-cols-2 items-center justify-between h-full mt-12 md:mt-0">
+            <div className="grid grid-cols-1 mf:grid-cols-2 items-center justify-between h-full mt-12 md:mt-0">
               <div style={{marginBottom: 230}}  className="w-10/12 ml-12 md:row-start-1">
                 <div className="my-6 sm:my-12">
                   <h2 className="text-3xl md:text-4xl font-semibold mb-4">

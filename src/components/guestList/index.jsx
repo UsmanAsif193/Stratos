@@ -18,7 +18,7 @@ const InputQuest = ({ placeholder, type, className }) => {
 const QuestList = () => {
   return (
     <Zoom left>
-      <section style={{marginTop: 100}} className="grid grid-cols-1  gap-2 p-2 lg:grid-cols-2 md:p-20 min-h-full bg-[#FAFBFB] overflow-hidden">
+      <section style={{marginTop: 100}} className="grid grid-cols-1  gap-2 p-2 lg:grid-cols-2 md:p-20 min-h-full  overflow-hidden">
         <div>
           <div className="flex flex-col md:flex-row md:items-end">
             <div className="flex items-center justify-center flex-col">

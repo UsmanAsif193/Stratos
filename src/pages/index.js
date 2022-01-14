@@ -1,12 +1,10 @@
 import React from "react";
 
 import Navbar from "../components/navbar";
-import Hero from "../components/hero";
-import GuestList from "../components/guestList";
 import dynamic from "next/dynamic";
-import AboutStratos from "../components/aboutStratos";
 import OurPartners from "../components/ourPartners";
 import JoinStratos from "../components/joinStratos";
+import { Fade } from "react-reveal";
 
 
 const Schedule = dynamic(() => import("../components/schedule"), {
@@ -20,14 +18,9 @@ const Home = () => {
         <Navbar />
         <JoinStratos />
       </div>
-      <div className="min-h-screen">
-      <div className="h-screen bg-cloud-image-index bg-cover text-white">
-      <Hero />
+      <div >
+      <div >
       </div>
-      <signUp />
-      <GuestList />
-      <Schedule />
-      <AboutStratos />
       <OurPartners />
     </div>
     

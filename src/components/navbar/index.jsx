@@ -22,17 +22,32 @@ const Navbar = ({ blackColor }) => {
           <Link  style={{color: "black"}} href={"/"}>Stratos</Link>
         </h1>
         <div>
-          <ul style={{color: "white"}} className="flex">
+          <ul  style={{marginLeft: 190}} className="flex">
             <NavbarItem title={"Home"} link="/" />
-            <NavbarItem title={"About Stratos"} link="/#about-stratos" />
-            <NavbarItem title={"The Social Club"} link="/#social-club" />
+            <NavbarItem title={"About Stratos"} link="/aboutStratos" />
+            <NavbarItem title={"Social Club"} link="/socialPage" />
+            <NavbarItem title={"Sign Up"} link="/signUp" />
+
           </ul>
         </div>
         <div className="cursor-pointer">
           <NavbarItem
-            title={"Sign Up"}
+            title={""}
             classProps={`list-none ${blackColor && "text-[black]"}`}
-            link="/signUp"
+            link=""
+          />
+        </div>
+        <div className="cursor-pointer">
+          <NavbarItem
+            title={" "}
+            classProps={`list-none ${blackColor && "text-[black]"}`}
+            link=""
+          />
+          <div style={{marginLeft: 30}} className="cursor-pointer">
+          <NavbarItem
+            title={" "}
+            classProps={`list-none ${blackColor && "text-[black]"}`}
+            link=""
           />
         </div>
       </div>
@@ -63,14 +78,18 @@ const Navbar = ({ blackColor }) => {
               <NavbarItem title={"Home"} link="/" classProps="my-2 text-lg" />
               <NavbarItem
                 title={"About Stratos"}
-                link="/#about-stratos"
-                classProps="my-2 text-lg"
+                classProps={`list-none my-2 text-lg ${
+                  blackColor && "text-[#4a9fb1]"
+                }`}
+                link="/#aboutStratos"
               />
               
               <NavbarItem
-                title={"The Social Club"}
-                link="/#social-club"
-                classProps="my-2 text-lg"
+                title={"Social Ckyb"}
+                classProps={`list-none my-2 text-lg ${
+                  blackColor && "text-[#4a9fb1]"
+                }`}
+                link="/#socialPage"
               />
               <NavbarItem
                 title={"Sign Up"}
@@ -83,6 +102,7 @@ const Navbar = ({ blackColor }) => {
           )}
         </div>
       </div>
+    </div>
     </div>
   );
 };
