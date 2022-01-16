@@ -22,9 +22,8 @@ const AboutStratos = () => {
                     Who we are
                   </h2>
                   <p className="text-lg md:text-xl font-light w-11/12">
-                    Stratos offers professional
-                    networking, mentorship and support to Black and Latinx
-                    professionals.
+                  Stratos is a professional networking platform that offers 
+                  a new way for Black & Latinx professionals to find and connect with each other. 
                   </p>
                 </div>
                 <div>

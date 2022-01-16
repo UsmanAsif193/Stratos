@@ -15,7 +15,6 @@ const aboutStratos = () => {
               <AboutStratos />
             </div>
           </Fade>
-          <OurPartners />
         </div>
       );
     };

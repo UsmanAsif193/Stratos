@@ -65,12 +65,10 @@ const Hero = () => {
               {timeLeft.seconds}
             </span>
             Seconds
-          </div>
+            </div>
         </div>
         <div className="font-light tracking-[.6rem] text-xl sm:text-2xl">
-          <div>
-
-          </div>
+          {dateToGet && dateToGet.replaceAll("/", ".")}
         </div>
       </section>
     </Fade>

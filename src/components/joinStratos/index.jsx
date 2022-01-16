@@ -1,7 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
+import { db } from "../../firebase";
+import { collection, addDoc } from "firebase/firestore";
 import SuccessCard from '../SuccessCard/SuccessCard';
 
 const JoinStratos = () => {
+   const [joinInput, setJoinInput] = useState("");
+  const handleJoinInput = (e) => {
+    setJoinInput(e.target.value);
+  };
+  const updateDBJoin = async (e) => {
+    e.preventDefault();
+
+    try {
+      const docRef = await addDoc(collection(db, "userEmails"), {
+        email: joinInput,
+      });
+      console.log("Document written with ID: ", docRef.id);
+      setJoinInput("");
+      SuccessCard();
+    } catch (e) {
+      console.error("Error adding document: ", e);
+    }
+  };
   return (
     <section className="flex items-center justify-center flex-wrap h-screen pt-20 px-6 lg:pt-0 overflow-hidden">
       <div className="w-[600px]">
@@ -21,17 +41,20 @@ const JoinStratos = () => {
         </div>
         <div className="flex items-center">
           <div className="relative">
+            <form onSubmit={updateDBJoin} >
             <input
-              type="text"
+              value={joinInput}
+              type="email"
               className="h-12 w-[90vw] md:h-12 md:w-[550px] pl-4 md:pl-8 pr-20 placeholder:text-lg placeholder-white bg-transparent border-2 rounded-lg z-0 focus:shadow focus:outline-none"
               placeholder="Email"
+              name="email"
+              required
+              onChange={handleJoinInput}
             />
             <div className="  absolute top-0 right-0">
-              {" "}
-              <button onClick={SuccessCard} className="h-12 w-28 md:h-12 md:w-40 text-black text-lg rounded-lg bg-white hover:bg-black hover:text-white hover:border-white hover:border-2">
-                Join
-              </button>{" "}
+              <input value="Join" type="submit"  className="h-12 w-28 md:h-12 md:w-40 text-black text-lg rounded-lg bg-white hover:bg-black hover:text-white hover:border-white hover:border-2" />
             </div>
+            </form>
           </div>
         </div>
       </div>

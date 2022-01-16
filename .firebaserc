@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "staging-stratos-561cf"
-  }
+    "default": "staging-stratos-561cf",
+    "staging": "staging-stratos-561cf"
+  },
+  "targets": {}
 }

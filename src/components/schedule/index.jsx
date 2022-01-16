@@ -11,7 +11,7 @@ const ServicesCard = ({ title, time }) => (
 const SocialClub = () => {
   return (
     <Zoom right>
-      <section
+      <section style={{marginBottom: 90}}
         id="social-club"
         className="flex min-h-screen w-full flex-col md:flex-row justify-center bg-cloud-image-index-2 bg-cover bg-blend-soft-light bg-blend-normal text-white items-center"
       >
@@ -27,14 +27,16 @@ const SocialClub = () => {
             />
             <div className="3xl:w-2/3">
               <p className="text-xl mt-12 md:mt-0">
-                Our events will offer networking, mentorship opportunities and
-                inspiring speakers that you can relate to, and when we come
-                together, the possibilities (and opportunities) are endless.
+              Stratos also offers in-person networking events for Black & Latinx 
+              professionals ages 21 & up. The Social Club provides networking, mentorship 
+              opportunities, and inspiring speakers that attendees can 
+              relate to, and when we come together, the possibilities (and opportunities) are endless.
               </p>
+              <br/>
+              
               <p className="text-xl mt-12 md:mt-0">
-                Join us to recognize the strength of the Black and Latinx
-                professional journey, celebrate your successes and connect with
-                others who are ready to take their careers to the next level. Ages 21-25.
+              Join us to recognize the strength of the Black and Latinx professional journey, celebrate your 
+              successes and connect with others ready to take their careers to the next level. 
               </p>
             </div>
             <div className="my-12 md:my-0">

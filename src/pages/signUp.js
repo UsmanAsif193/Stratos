@@ -13,7 +13,6 @@ const signUp = () => {
           <GuestList />
         </div>
       </Fade>
-      <OurPartners />
     </div>
   );
 };
