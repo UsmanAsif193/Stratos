@@ -19,41 +19,26 @@ const Navbar = ({ blackColor }) => {
             blackColor && "text-black"
           } tracking-[.7rem] uppercase font-extralight`}
         >
-          <Link  style={{color: "black"}} href={"/"}>Stratos</Link>
+          <Link href={"/"}>Stratos</Link>
         </h1>
         <div>
-          <ul  style={{marginLeft: 190}} className="flex">
+          <ul className="flex">
             <NavbarItem title={"Home"} link="/" />
             <NavbarItem title={"About Stratos"} link="/aboutStratos" />
-            <NavbarItem title={"Social Club"} link="/socialPage" />
-            <NavbarItem title={"Sign Up"} link="/signUp" />
-
+            <NavbarItem title={"The Social Club"} link="/socialPage" />
           </ul>
         </div>
         <div className="cursor-pointer">
           <NavbarItem
-            title={""}
-            classProps={`list-none ${blackColor && "text-[black]"}`}
-            link=""
-          />
-        </div>
-        <div className="cursor-pointer">
-          <NavbarItem
-            title={" "}
-            classProps={`list-none ${blackColor && "text-[black]"}`}
-            link=""
-          />
-          <div style={{marginLeft: 30}} className="cursor-pointer">
-          <NavbarItem
-            title={" "}
-            classProps={`list-none ${blackColor && "text-[black]"}`}
-            link=""
+            title={"Sign Up"}
+            classProps={`list-none ${blackColor && "text-[#4a9fb1]"}`}
+            link="/signUp"
           />
         </div>
       </div>
       <div className=" md:hidden">
         <div className="flex justify-between">
-          <h1  className="tracking-[.7rem] uppercase font-extralight">
+          <h1 className="tracking-[.7rem] uppercase font-extralight">
             Stratos
           </h1>
           <i
@@ -78,31 +63,25 @@ const Navbar = ({ blackColor }) => {
               <NavbarItem title={"Home"} link="/" classProps="my-2 text-lg" />
               <NavbarItem
                 title={"About Stratos"}
-                classProps={`list-none my-2 text-lg ${
-                  blackColor && "text-[#4a9fb1]"
-                }`}
-                link="/aboutStratos"
-              />
-              
-              <NavbarItem
-                title={"Social Ckyb"}
-                classProps={`list-none my-2 text-lg ${
-                  blackColor && "text-[#4a9fb1]"
-                }`}
-                link="/socialPage"
+                link="/#about-stratos"
+                classProps="my-2 text-lg"
               />
               <NavbarItem
-                title={"Sign Up"}
+                title={"The Social Club"}
+                link="/#social-club"
+                classProps="my-2 text-lg"
+              />
+              <NavbarItem
+                title={"Contact Us"}
                 classProps={`list-none my-2 text-lg ${
                   blackColor && "text-[#4a9fb1]"
                 }`}
-                link="/signUp"
+                link="/contactUs"
               />
             </ul>
           )}
         </div>
       </div>
-    </div>
     </div>
   );
 };
