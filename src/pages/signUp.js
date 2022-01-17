@@ -1,7 +1,7 @@
 import React from "react";
 import { Fade } from "react-reveal";
 import Navbar from "../components/navbar";
-import GuestList from "../components/guestList";
+import GuestList from "../components/GuestList/GuestList";
 import OurPartners from "../components/OurPartners";
 
 const signUp = () => {

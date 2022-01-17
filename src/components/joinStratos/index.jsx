@@ -5,7 +5,7 @@ import SuccessCard from '../SuccessCard/SuccessCard';
 
 const JoinStratos = () => {
    const [joinInput, setJoinInput] = useState("");
-  const handleJoinInput = (e) => {
+   const handleJoinInput = (e) => {
     setJoinInput(e.target.value);
   };
   const updateDBJoin = async (e) => {
@@ -15,7 +15,7 @@ const JoinStratos = () => {
       const docRef = await addDoc(collection(db, "userEmails"), {
         email: joinInput,
       });
-      console.log("Document written with ID: ", docRef.id);
+      
       setJoinInput("");
       SuccessCard();
     } catch (e) {
