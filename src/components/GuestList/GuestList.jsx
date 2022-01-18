@@ -59,8 +59,8 @@ import { Zoom } from "react-reveal";
                 </div>
                 <div>
                   <h2 className="pl-2 md:pl-[40px] text-3xl md:text-4xl font-bold ">
-                    A unique networking experience that is{" "}
-                    <span className="text-[#1DADBB]">t
+                    A unique networking experience that is {" "}
+                    <span className="text-[#1DADBB]">
                       <br />
                       out of this world.{" "}
                     </span>
@@ -105,6 +105,7 @@ import { Zoom } from "react-reveal";
                       value={Name}
                       onChange= {(e) => setName(e.target.value)}   
                       placeholder="Name"
+                      required
                     />
                   </div>
                   <div className="w-full md:w-1/2 px-3">
@@ -114,7 +115,9 @@ import { Zoom } from "react-reveal";
                      value ={Email} 
                      onChange = {(e) => setEmail(e.target.value)}  
                      type = "email"  
-                     placeholder="Email" />
+                     placeholder="Email" 
+                     required
+                     />
                   </div>
                 </div>
                 <div className="flex flex-wrap -mx-3 mb-2">
@@ -127,6 +130,8 @@ import { Zoom } from "react-reveal";
                      onChange={(e) => setAge(e.target.value)}   
                      placeholder="Age" 
                      name=""
+                     type = "number"
+                     required
                     />
                   </div>
                   <div className="w-full md:w-1/2 px-3">
@@ -137,6 +142,7 @@ import { Zoom } from "react-reveal";
                      onChange={(e) => setIndustry(e.target.value)}   
                      placeholder="Industry"  
                      name=""
+                     required
                     />
                   </div>
                 </div>
@@ -149,6 +155,7 @@ import { Zoom } from "react-reveal";
                     onChange={(e) => setJob_Title(e.target.value)} 
                     placeholder="Job Title" 
                     name=""
+                    required
                     />
                   </div>
                   <div className="w-full md:w-1/2 px-3">
@@ -159,6 +166,8 @@ import { Zoom } from "react-reveal";
                   onChange={(e) => setPhoneNumber(e.target.value)}  
                   placeholder="Phone Number" 
                   name="" 
+                  required
+                  type = "number"
                   />
                   </div>
                 </div>
@@ -174,10 +183,11 @@ import { Zoom } from "react-reveal";
                       type="text"
                       placeholder="Briefly Describe Your Career Goals"
                       name=""
+                      required
                     />
                   </div>
                 </div>
-              <button type="submit" className="bg-black hover:bg-gray-700 text-white font-semibold py-2 px-16 rounded-xl border-0 shadow-md-full">
+              <button style = {{marginLeft: 170}} type="submit" className="bg-black hover:bg-gray-700 text-white font-semibold py-2 px-16 rounded-xl border-0 shadow-md-full">
                 Register
               </button>
               </form>

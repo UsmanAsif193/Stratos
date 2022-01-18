@@ -11,13 +11,16 @@ const SinglePartner = ({ className, alt, Src }) => (
 
 const OurPartners = () => {
   return (
-    <Zoom left>
+    <Zoom  left>
       <section className="p-20 px-12 min-h-screen md:h-screen">
         <div className="flex justify-center items-center">
-          <h1 className="tracking-[.7rem] uppercase font-light text-2xl md:text-3xl text-center">
-         OUR PARTNERS          </h1>
+          <div  >
+          <h1 className="tracking-[.7rem] uppercase font-light text-2xl md:text-2xl text-center">
+         OUR PARTNERS          
+         </h1>
+          </div>
         </div>
-        <div className="flex justify-center items-center h-5/6">
+        <div  className="flex justify-center items-center h-5/6">
           <div className="flex flex-wrap items-center justify-center mt-24 lg:mt-0">
             <SinglePartner
               Src={require("../../assets-partners/acadia-hover.svg").default}
@@ -50,12 +53,49 @@ const OurPartners = () => {
             />
           </div>
         </div>
+        <div  style={{marginLeft: 679}}  className="flex  items-center ">
+          <a href="https://www.instagram.com/trystratos/">
+              <img 
+              className="w-[45px]"
+              src="assets/insta.png"
+              />
+          </a>
+          <a href="https://www.linkedin.com/company/trystratos/">
+          <img
+            className="w-[45px]"
+            src="assets/linkedin.png"                 
+            />
+          </a>
+          <a href="mailto:info@trystratos.com">
+          <img
+            className="w-[40px]"
+            src="assets/mail.png"                 
+            />
+          </a>
+          </div>
         <div className="flex md:items-start justify-center flex-col">
           <div className="flex items-center justify-center my-4">
-
+          <h1 style={{marginLeft: 590} } className="tracking-[.7rem] uppercase font-light text-1xl md:text-1xl text-center">
+          Stratos Solutions </h1>
+          </div>
+          <div>
+          <h3 style={{marginLeft: 450}} className="tracking-[.7rem] uppercase font-light text-1xl md:text-1xl text-center">
+          120 W Trinity Pl, Decatur, GA 30030 </h3>
+          </div>
+          <div>
+            <br></br>
+          <h3 style={{marginLeft: 630}} className="tracking-[.7rem] uppercase font-light text-1xl md:text-1xl text-center">
+          404-530-9642 </h3>
+          </div>
           </div>
           <div className="flex items-center justify-center">
           </div>
+          <div>
+         <br />
+         <br />
+         <br />
+          </div>
+         <div>
         </div>
       </section>
     </Zoom>
