@@ -15,7 +15,7 @@ const OurPartners = () => {
       <section className="p-20 px-12 min-h-screen md:h-screen">
         <div className="flex justify-center items-center">
           <div  >
-          <h1 className="tracking-[.7rem] uppercase font-light text-2xl md:text-2xl text-center">
+          <h1 className="tracking-[.7rem] uppercase ml-18 font-light text-2xl md:text-2xl text-center">
          OUR PARTNERS          
          </h1>
           </div>
@@ -53,7 +53,7 @@ const OurPartners = () => {
             />
           </div>
         </div>
-        <div  style={{marginLeft: 679}}  className="flex  items-center ">
+        <div className="flex justify-center items-center mr-7">
           <a href="https://www.instagram.com/trystratos/">
               <img 
               className="w-[45px]"
@@ -73,27 +73,21 @@ const OurPartners = () => {
             />
           </a>
           </div>
-        <div className="flex md:items-start justify-center flex-col">
-          <div className="flex items-center justify-center my-4">
-          <h1 style={{marginLeft: 590} } className="tracking-[.7rem] uppercase font-light text-1xl md:text-1xl text-center">
+          <div className="flex justify-center items-center">
+          <h1 className="tracking-[.7rem] uppercase ml-55 font-light text-1xl md:text-1xl text-center">
           Stratos Solutions </h1>
+          <br>
+          </br>
           </div>
-          <div>
-          <h3 style={{marginLeft: 450}} className="tracking-[.7rem] uppercase font-light text-1xl md:text-1xl text-center">
+          <div className="flex items-center justify-center">
+          <h3  className="tracking-[.7rem]  ml-30 uppercase font-light text-1xl md:text-1xl text-center">
           120 W Trinity Pl, Decatur, GA 30030 </h3>
           </div>
           <div>
-            <br></br>
-          <h3 style={{marginLeft: 630}} className="tracking-[.7rem] uppercase font-light text-1xl md:text-1xl text-center">
-          404-530-9642 </h3>
-          </div>
-          </div>
           <div className="flex items-center justify-center">
+           <h4  className="tracking-[.7rem] uppercase font-light text-1xl md:text-1xl text-center">
+          404-530-9642 </h4>
           </div>
-          <div>
-         <br />
-         <br />
-         <br />
           </div>
          <div>
         </div>
