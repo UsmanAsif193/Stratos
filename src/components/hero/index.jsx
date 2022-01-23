@@ -29,7 +29,7 @@ const Hero = () => {
   return (
     <Fade top>
       <section className="text-lg flex flex-col justify-evenly items-center h-5/6 md:pt-12">
-        <h1 className="tracking-[1.6rem] uppercase font-extralight text-xl text-center sm:text-2xl">
+        <h1 className="tracking-[1.6rem] ml-20 uppercase font-extralight text-xl text-center sm:text-2xl">
           Stratos Presents
         </h1>
         <img

@@ -6,9 +6,9 @@ import OurPartners from "../components/OurPartners";
 
 const signUp = () => {
   return (
-    <div   className="min-h-screen">
+    <div  className="h-half bg-cloud-image-index bg-cover text-white">
     <Fade top>
-      <div  className="h-full bg-cloud-image-index bg-cover text-white">
+    <div   className="min-h-screen">
         <Navbar  />
           <GuestList />
         </div>
