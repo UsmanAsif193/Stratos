@@ -68,7 +68,7 @@ const Navbar = ({ blackColor }) => {
               />
               <NavbarItem
                 title={"The Social Club"}
-                link="/socialClub"
+                link="/socialPage"
                 classProps="my-2 text-lg"
               />
               <NavbarItem
