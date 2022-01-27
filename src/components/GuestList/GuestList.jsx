@@ -60,7 +60,7 @@ import { Zoom } from "react-reveal";
                 <div>
                   <h2 className="pl-2 md:pl-[40px] text-3xl md:text-4xl font-bold ">
                     A unique networking experience that is {" "}
-                    <span className="text-[#1DADBB]">
+                    <span className="text-[#87CEFA]">
                       <br />
                       out of this world.{" "}
                     </span>
