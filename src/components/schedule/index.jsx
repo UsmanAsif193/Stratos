@@ -27,16 +27,16 @@ const SocialClub = () => {
             />
             <div className="3xl:w-2/3">
               <p className="text-xl mt-12 md:mt-0">
-              Stratos also offers in-person networking events for Black & Latinx 
-              professionals ages 21 & up. The Social Club provides networking, mentorship 
-              opportunities, and inspiring speakers that attendees can 
-              relate to, and when we come together, the possibilities (and opportunities) are endless.
+              We are excited to host our first in-person networking event of the year on February 26th. 
+Black & Latinx professionals (ages 21 and over)  pull up on us for networking, drinks, and an inspiring 
+fireside chat from the founder of The Gathering Spot, Ryan Wilson.   
+
               </p>
               <br/>
               
               <p className="text-xl mt-12 md:mt-0">
-              Join us to recognize the strength of the Black and Latinx professional journey, celebrate your 
-              successes and connect with others ready to take their careers to the next level. 
+              Join us to recognize the strength of the Black and Latinx professional journey, celebrate your successes and connect with others ready to take their careers to the next level. 
+
               </p>
             </div>
             <div className="my-12 md:my-0">
