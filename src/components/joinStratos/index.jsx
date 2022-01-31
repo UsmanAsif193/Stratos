@@ -4,7 +4,8 @@ import { collection, addDoc } from "firebase/firestore";
 import SuccessCard from '../SuccessCard/SuccessCard';
 
 const JoinStratos = () => {
-   const [joinInput, setJoinInput] = useState("");
+   const [email, setEmail] = useState("");
+   const [name,setName] = useState("");
    const handleJoinInput = (e) => {
     setJoinInput(e.target.value);
   };
@@ -12,11 +13,13 @@ const JoinStratos = () => {
     e.preventDefault();
 
     try {
-      const docRef = await addDoc(collection(db, "userEmails"), {
-        email: joinInput,
+      const docRef = await addDoc(collection(db, "Name_Email"), {
+        email: email,
+        name: name,
       });
       
-      setJoinInput("");
+      setEmail("");
+      setName("");
       SuccessCard();
     } catch (e) {
       console.error("Error adding document: ", e);
@@ -32,34 +35,47 @@ const JoinStratos = () => {
           </h2>
         </div>
         <div className="text-xl md:text-2xl font-bold py-6">
-          <h2>Careers. Networking. Mentorships. All in one spot.</h2>
+          <h2>Careers. Networking. Mentorships</h2>
+           <h3>All in one spot.</h3> 
+
         </div>
         <div>
-          <h3 className="pb-4 md:pb-2">
+          <h4 className="pb-4 md:pb-4">
             Be the first to have access to Stratos opportunities
-          </h3>
+          </h4>
         </div>
-        <div className="flex items-center">
-          <div className="relative">
+        <div>
+          <div>
             <form onSubmit={updateDBJoin} >
             <input
-              value={joinInput}
-              type="email"
-              className="h-12 w-[90vw] md:h-12 md:w-[550px] pl-4 md:pl-8 pr-20 placeholder:text-lg placeholder-white bg-transparent border-2 rounded-lg z-0 focus:shadow focus:outline-none"
-              placeholder="Email"
-              name="email"
+              value={name}
+              type="text"
+              className={` appearance-none placeholder-black block w-80 bg-white text-black border 
+              border-gray-300 rounded-xl border-0 shadow-md py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-gray-100`}     
+              placeholder="Name"
               required
-              onChange={handleJoinInput}
+              onChange={(e) => setName(e.target.value)}
             />
-            <div className="  absolute top-0 right-0">
-              <input value="Join" type="submit"  className="h-12 w-28 md:h-12 md:w-40 text-black text-lg rounded-lg bg-white hover:bg-black hover:text-white hover:border-white hover:border-2" />
-            </div>
+            <input
+              value={email}
+              type="email"
+              className={`  placeholder-black block w-80 bg-white text-black border 
+              border-gray-300 rounded-xl border-0 shadow-md py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-gray-100`}
+              required
+              placeholder="Email"
+
+              onChange={(e)=> setEmail(e.target.value)}
+            />
             </form>
           </div>
         </div>
+        <div className=" right-50 cennter top-0 ">
+              <input value="Join" type="submit"  className="bg-black ml-20  hover:bg-gray-700 text-white font-semibold py-2 px-16 rounded-xl border-0 shadow-md-full" />
+            </div>
+   
       </div>
       <div>
-        <img className="md:w-[650px]" src="assets/Header-graphic.png" alt="" />
+        <img className="md:w-[750px]" src="assets/Header-graphic.png" alt="" />
       </div>
     </section>
   );
