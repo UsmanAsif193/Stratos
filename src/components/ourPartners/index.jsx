@@ -55,19 +55,18 @@ const OurPartners = () => {
               Src={require("../../assets-partners/no-name1.svg").default}
               alt="Partner 8"
             /> 
-        <div  className="flex justify-center items-center h-5/6">
-            <SinglePartner
+            
+             <SinglePartner
               Src={require("../../assets-partners/no-name2.svg").default}
-              alt="Partner 8"
+              alt="Partner 9"
 
             />
             <SinglePartner
               Src={require("../../assets-partners/no-name3.svg").default}
-              alt="Partner 8"
+              alt="Partner 10"
             />
 
-            </div>
-            
+    
 
           </div>
         </div>
