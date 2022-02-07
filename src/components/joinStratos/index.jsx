@@ -76,7 +76,7 @@ const JoinStratos = () => {
    
       </div>
       <div>
-        <img className="md:w-[750px]" src="assets/Header-graphic.png" alt="" />
+        <img className="mb-20 md:w-[650px]" src="assets/Header-graphic.png" alt="" />
       </div>
     </section>
   );
