@@ -66,12 +66,13 @@ const JoinStratos = () => {
 
               onChange={(e)=> setEmail(e.target.value)}
             />
+          <div className=" right-50 cennter top-0 ">
+              <input value="Join" type="submit"  className="bg-black ml-20  hover:bg-gray-700 text-white font-semibold py-2 px-16 rounded-xl border-0 shadow-md-full" />
+            </div>
             </form>
           </div>
         </div>
-        <div className=" right-50 cennter top-0 ">
-              <input value="Join" type="submit"  className="bg-black ml-20  hover:bg-gray-700 text-white font-semibold py-2 px-16 rounded-xl border-0 shadow-md-full" />
-            </div>
+
    
       </div>
       <div>
