@@ -51,6 +51,24 @@ const OurPartners = () => {
               Src={require("../../assets-partners/verkada-hover.svg").default}
               alt="Partner 7"
             />
+             <SinglePartner
+              Src={require("../../assets-partners/no-name1.svg").default}
+              alt="Partner 8"
+            /> 
+        <div  className="flex justify-center items-center h-5/6">
+            <SinglePartner
+              Src={require("../../assets-partners/no-name2.svg").default}
+              alt="Partner 8"
+
+            />
+            <SinglePartner
+              Src={require("../../assets-partners/no-name3.svg").default}
+              alt="Partner 8"
+            />
+
+            </div>
+            
+
           </div>
         </div>
         <div className="flex justify-center items-center mr-7">
