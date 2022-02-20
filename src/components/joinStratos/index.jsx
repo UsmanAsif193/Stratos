@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { db } from "../../firebase";
 import { collection, addDoc } from "firebase/firestore";
-import SuccessCard from '../SuccessCard/SuccessCard';
+import SuccessCard from '../SuccessCard/successcard';
 
 const JoinStratos = () => {
    const [email, setEmail] = useState("");
@@ -17,7 +17,7 @@ const JoinStratos = () => {
         email: email,
         name: name,
       });
-      
+
       setEmail("");
       setName("");
       SuccessCard();
@@ -36,7 +36,7 @@ const JoinStratos = () => {
         </div>
         <div className="text-xl md:text-2xl font-bold py-6">
           <h2>Careers. Networking. Mentorships</h2>
-           <h3>All in one spot.</h3> 
+           <h3>All in one spot.</h3>
 
         </div>
         <div>
@@ -50,8 +50,8 @@ const JoinStratos = () => {
             <input
               value={name}
               type="text"
-              className={` appearance-none placeholder-black block w-80 bg-white text-black border 
-              border-gray-300 rounded-xl border-0 shadow-md py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-gray-100`}     
+              className={` appearance-none placeholder-black block w-80 bg-white text-black border
+              border-gray-300 rounded-xl border-0 shadow-md py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-gray-100`}
               placeholder="Name"
               required
               onChange={(e) => setName(e.target.value)}
@@ -59,7 +59,7 @@ const JoinStratos = () => {
             <input
               value={email}
               type="email"
-              className={`  placeholder-black block w-80 bg-white text-black border 
+              className={`  placeholder-black block w-80 bg-white text-black border
               border-gray-300 rounded-xl border-0 shadow-md py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-gray-100`}
               required
               placeholder="Email"
@@ -73,7 +73,7 @@ const JoinStratos = () => {
           </div>
         </div>
 
-   
+
       </div>
       <div>
         <img className="mb-20 md:w-[650px]" src="assets/Header-graphic.png" alt="" />
