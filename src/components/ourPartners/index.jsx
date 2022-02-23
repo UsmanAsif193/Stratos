@@ -4,7 +4,7 @@ import OurPartnersGridLayout from "./ourPartnersGridLayout";
 
 const SinglePartner = ({ className, alt, Src }) => (
   <div
-    className={`${className} single_partner_div flex-[1_0_16%] flex items-center justify-center min-w-[120px] min-h-[120px]  mx-4 p-2`}
+    className={`${className} single_partner_div flex-[1_0_21%] flex items-center justify-center min-w-[120px] min-h-[120px]  mx-4 p-2`}
   >
     <Src />
   </div>
@@ -54,54 +54,11 @@ const OurPartners = () => {
               Src={require("../../assets-partners/verkada.svg").default}
               alt="Partner 7"
             />
-            <SinglePartner
-              Src={require("../../assets-partners/no-name1.svg").default}
-              alt="Partner 8"
-            />
-
-            <SinglePartner
-              Src={require("../../assets-partners/no-name2.svg").default}
-              alt="Partner 9"
-            />
-            <SinglePartner
-              Src={require("../../assets-partners/no-name3.svg").default}
-              alt="Partner 10"
-            />
           </div>
         </div>
-        <div>
+        <div className="pb-4">
           <OurPartnersGridLayout />
         </div>
-        <div className="flex justify-center items-center mr-7">
-          <a href="https://www.instagram.com/trystratos/">
-            <img className="w-[45px]" src="assets/insta.png" />
-          </a>
-          <a href="https://www.linkedin.com/company/trystratos/">
-            <img className="w-[45px]" src="assets/linkedin.png" />
-          </a>
-          <a href="mailto:info@trystratos.com">
-            <img className="w-[40px]" src="assets/mail.png" />
-          </a>
-        </div>
-        <div className="flex justify-center items-center">
-          <h1 className="tracking-[.7rem] uppercase ml-55 font-light text-1xl md:text-1xl text-center">
-            Stratos Solutions{" "}
-          </h1>
-          <br></br>
-        </div>
-        <div className="flex items-center justify-center">
-          <h3 className="tracking-[.7rem]  ml-30 uppercase font-light text-1xl md:text-1xl text-center">
-            120 W Trinity Pl, Decatur, GA 30030{" "}
-          </h3>
-        </div>
-        <div>
-          <div className="flex items-center justify-center">
-            <h4 className="tracking-[.7rem] uppercase font-light text-1xl md:text-1xl text-center">
-              404-530-9642{" "}
-            </h4>
-          </div>
-        </div>
-        <div></div>
       </section>
     </Zoom>
   );
