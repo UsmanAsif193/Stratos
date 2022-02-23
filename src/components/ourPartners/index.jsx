@@ -1,5 +1,6 @@
 import React from "react";
 import { Zoom } from "react-reveal";
+import OurPartnersGridLayout from "./ourPartnersGridLayout";
 
 const SinglePartner = ({ className, alt, Src }) => (
   <div
@@ -13,7 +14,7 @@ const OurPartners = () => {
   return (
     <Zoom left>
       <section className="p-20 px-12 min-h-screen md:h-screen">
-        <div className=" flex justify-center mb-12 items-center">
+        <div className=" flex justify-center items-center">
           <div>
             <h1 className="tracking-[.7rem] uppercase ml-18 mb-24 font-light text-2xl md:text-2xl text-center">
               Stratos partners with companies committed to diversifying their
@@ -67,6 +68,9 @@ const OurPartners = () => {
               alt="Partner 10"
             />
           </div>
+        </div>
+        <div>
+          <OurPartnersGridLayout />
         </div>
         <div className="flex justify-center items-center mr-7">
           <a href="https://www.instagram.com/trystratos/">
