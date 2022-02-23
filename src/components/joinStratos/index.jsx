@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { db } from "../../firebase";
 import { collection, addDoc } from "firebase/firestore";
-import SuccessCard from '../SuccessCard/successcard';
+import SuccessCard from "../SuccessCard";
 
 const JoinStratos = () => {
    const [email, setEmail] = useState("");

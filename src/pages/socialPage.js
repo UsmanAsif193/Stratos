@@ -4,7 +4,7 @@ import Navbar from '../components/navbar';
 import Hero from '../components/hero';
 import { Fade } from 'react-reveal';
 import dynamic from "next/dynamic";
-import GuestList from '../components/GuestList/GuestList';
+import GuestList from "../components/GuestList";
 
 
 const Schedule = dynamic(() => import("../components/schedule"), {

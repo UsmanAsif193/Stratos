@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import SuccessCard from '../SuccessCard/SuccessCard';
+import SuccessCard from "../SuccessCard";
 import { db } from "../../firebase";
 import {collection, addDoc} from "firebase/firestore";
 import { Zoom } from "react-reveal";
