@@ -13,17 +13,17 @@ const SinglePartner = ({ className, alt, Src }) => (
 const OurPartners = () => {
   return (
     <Zoom left>
-      <section className="p-20 px-12 min-h-screen md:h-screen">
+      <section className="p-20 px-4 min-h-screen md:h-screen">
         <div className=" flex justify-center items-center">
           <div>
-            <h1 className="tracking-[.7rem] uppercase ml-18 mb-24 font-light text-2xl md:text-2xl text-center">
+            <h1 className="tracking-[.7rem] uppercase ml-18 mb-16 md:px-10 font-light text-lg md:text-2xl text-center">
               Stratos partners with companies committed to diversifying their
               workforce.
             </h1>
           </div>
         </div>
         <div className="  mb-24 flex justify-center items-center h-6/6">
-          <div className="flex flex-wrap items-center justify-center mb-20 lg:mt-0">
+          <div className="flex flex-wrap items-center justify-center mt-0">
             <SinglePartner
               Src={require("../../assets-partners/acadia-hover.svg").default}
               alt="Partner 1"
