@@ -13,7 +13,7 @@ const AboutStratos = () => {
               </h1>
             </div>
             <div className="grid grid-cols-1 mf:grid-cols-2 items-center justify-between h-full mt-12 md:mt-0">
-              <div className="w-10/12 ml-12 md:row-start-1 md:mb-[230px]">
+              <div className="w-10/12 ml-4 md:ml-12 md:row-start-1 md:mb-[230px]">
                 <div className="my-6 sm:my-12">
                   <h2 className="text-3xl md:text-4xl font-semibold mb-4">
                     Our Story
