@@ -27,11 +27,12 @@ const AboutStratos = () => {
                     Stratos started as a recruitment firm that sourced diverse
                     talent for its partners. What inspired us to expand our
                     vision was when Jonathan made a call to offer a young lady a
-                    job. Jonathan told her, “you got the job,” and she began to
-                    cry. Jonathan asked her why are you crying, and her response
-                    was, “this opportunity changed me and my family's life.”
-                    Stratos is on a mission to scale this story and replicate
-                    this level of impact across the world.
+                    job. Jonathan told her, &quot;you got the job,&quot; and she
+                    began to cry. Jonathan asked her why are you crying, and her
+                    response was, &quot;this opportunity changed me and my
+                    family&apos;s life.&quot; Stratos is on a mission to scale
+                    this story and replicate this level of impact across the
+                    world.
                   </p>
                 </div>
                 <div className="my-6 sm:my-12">
