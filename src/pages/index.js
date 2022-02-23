@@ -14,18 +14,15 @@ const Schedule = dynamic(() => import("../components/schedule"), {
 const Home = () => {
   return (
     <div className="min-h-screen">
-      <div className="h-screen bg-cloud-image-index bg-cover text-white">
+      <div className="min-h-screen bg-cloud-image-index bg-cover text-white">
         <Navbar />
         <JoinStratos />
       </div>
-      <div >
-      <div >
+      <div>
+        <div></div>
+        <OurPartners />
       </div>
-      <OurPartners />
     </div>
-    
-        </div>
-
   );
 };
 

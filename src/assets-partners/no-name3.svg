@@ -4,7 +4,7 @@
 
 <g transform="matrix(0.7 0 0 0.7 0 0)">
 	<g transform="matrix(0.4017857 0 0 0.4017857 0 0)">
-        <path d="M0 0L0 224L224 224L224 0L0 0z" stroke="none" fill="#21BFD6" fill-rule="nonzero" />
+        <path d="M0 0L0 224L224 224L224 0L0 0z" stroke="none" fill="gray" fill-rule="nonzero" />
         <path d="M93 16L93 18L96 18L96 16L93 16zM79 19L76 22L79 19zM65 23L64 28L65 28L65 23zM74 24L75 25L74 24zM84 25L84 26L88 25L84 25zM72 26L69 33L69 49L70 49C 70 43.2333 67.7627 28.2474 77.0147 28.3727C 82.4268 28.446 88.1199 33.8971 93 36L93 36L92 32L84 27L80 28L81 26L72 26z" stroke="none" fill="#23BCC6" fill-rule="nonzero" />
         <path d="M73 28L72 30L73 28z" stroke="none" fill="#5BC3CF" fill-rule="nonzero" />
         <path d="M72 31L78 29L72 31z" stroke="none" fill="#A1E4EE" fill-rule="nonzero" />

@@ -4,7 +4,7 @@ import { Fade } from "react-reveal";
 const AboutStratos = () => {
   return (
     <Fade bottom>
-      <section className="overflow-hidden" id="about-stratos">
+      <section className="overflow-hidden lg:h-screen" id="about-stratos">
         <div className=" md:mt-0 md:p-20 md:pb-0 md:py-12 md:px-4 min-h-screen">
           <div className="p-20 pb-0 md:pl-20 px-4 mt-24 md:mt-0 h-full">
             <div className="flex w-full justify-center items-center">
@@ -13,10 +13,7 @@ const AboutStratos = () => {
               </h1>
             </div>
             <div className="grid grid-cols-1 mf:grid-cols-2 items-center justify-between h-full mt-12 md:mt-0">
-              <div
-                style={{ marginBottom: 230 }}
-                className="w-10/12 ml-12 md:row-start-1"
-              >
+              <div className="w-10/12 ml-12 md:row-start-1 md:mb-[230px]">
                 <div className="my-6 sm:my-12">
                   <h2 className="text-3xl md:text-4xl font-semibold mb-4">
                     Our Story

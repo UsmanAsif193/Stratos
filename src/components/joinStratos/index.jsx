@@ -26,7 +26,7 @@ const JoinStratos = () => {
     }
   };
   return (
-    <section className="flex items-center justify-center flex-wrap h-screen pt-20 px-6 lg:pt-0 lg:px-40 overflow-hidden">
+    <section className="flex items-center justify-center flex-wrap min-h-screen pt-20 px-6 lg:pt-0 lg:px-40 overflow-hidden">
       <div className="w-full flex-1">
         <div>
           <h2 className="text-xl md:text-3xl">
