@@ -4,7 +4,7 @@ import OurPartnersGridLayout from "./ourPartnersGridLayout";
 
 const SinglePartner = ({ className, alt, Src }) => (
   <div
-    className={`${className} single_partner_div flex-[1_0_21%] flex items-center justify-center min-w-[120px] min-h-[120px]  mx-4 p-2`}
+    className={`${className} single_partner_div flex-[1_0_10%] flex items-center justify-center min-w-[120px] min-h-[120px]  mx-4 p-2`}
   >
     <Src />
   </div>

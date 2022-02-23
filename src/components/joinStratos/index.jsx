@@ -27,7 +27,7 @@ const JoinStratos = () => {
   };
   return (
     <section className="flex items-center justify-center flex-wrap min-h-screen pt-20 px-6 lg:pt-0 lg:px-40 overflow-hidden">
-      <div className="w-full flex-1">
+      <div className="w-full flex-1 xl:pr-12">
         <div>
           <h2 className="text-xl md:text-3xl">
             A new way for Latinx & Black professionals to find relevant
