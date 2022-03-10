@@ -5,12 +5,12 @@ import Link from "next/link";
 
 const Blog = () => {
   return (
-    <div className="min-h-screen bg-cloud-image-index bg-cover ">
+    <div className="min-h-screen bg-[#449eae] bg-cover ">
       <div className="text-white">
         <Navbar />
       </div>
       <h1 className="tracking-[.7rem] uppercase font-light text-2xl md:text-4xl text-center text-white py-14 pt-24">
-        Strat<span className="text-[#45A5AE]">o</span>s Blogs
+        Strat<span className="text-black">o</span>s Blogs
       </h1>
 
       <div className="container mx-auto flex flex-wrap py-6">

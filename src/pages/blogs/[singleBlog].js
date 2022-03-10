@@ -13,7 +13,7 @@ const SingleArticle = () => {
   return (
     <>
       {blog && (
-        <div className="min-h-screen bg-cloud-image-index bg-cover">
+        <div className="min-h-screen bg-[#52b0c1] bg-cover">
           <div className="text-white  ">
             <Navbar />
           </div>
