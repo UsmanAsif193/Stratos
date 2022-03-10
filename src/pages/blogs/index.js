@@ -9,6 +9,10 @@ const Blog = () => {
       <div className="text-white">
         <Navbar />
       </div>
+      <h1 className="tracking-[.7rem] uppercase font-light text-2xl md:text-4xl text-center text-white py-14 pt-24">
+        Strat<span className="text-[#45A5AE]">o</span>s Blogs
+      </h1>
+
       <div className="container mx-auto flex flex-wrap py-6">
         <section className="w-full md:w-2/3 flex flex-col items-center px-3">
           {allBlogs.map((item) => {
@@ -54,16 +58,20 @@ const Blog = () => {
         <aside className="w-full md:w-1/3 flex flex-col items-center px-3">
           <div className="w-full bg-white shadow flex flex-col my-4 p-6 bg-[#ececec]">
             <p className="text-xl font-semibold pb-5">About Us</p>
-            <p className="pb-2">
+            <p>
               Jonathan Cornelius founded Stratos intending to solve a big
               problem. The problem was the lack of diverse talent in the tech
-              space. Stratos started as a recruitment firm that sourced diverse
-              talent for its partners. What inspired us to expand our vision was
-              when Jonathan made a call to offer a young lady a job. Jonathan
-              told her, "you got the job," and she began to cry. Jonathan asked
-              her why are you crying, and her response was, "this opportunity
-              changed me and my family's life." Stratos is on a mission to scale
-              this story and replicate this level of impact across the world.
+              space.
+            </p>
+            <p>
+              Stratos started as a recruitment firm that sourced diverse talent
+              for its partners. What inspired us to expand our vision was when
+              Jonathan made a call to offer a young lady a job. Jonathan told
+              her, &quot;you got the job,&quot; and she began to cry. Jonathan
+              asked her why are you crying, and her response was, &quot;this
+              opportunity changed me and my family&apos;s life.&quot; Stratos is
+              on a mission to scale this story and replicate this level of
+              impact across the world.
             </p>
             <a
               href="#"
