@@ -17,7 +17,10 @@ const Blog = () => {
         <section className="w-full md:w-2/3 flex flex-col items-center px-3">
           {allBlogs.map((item) => {
             return (
-              <article className="flex flex-col shadow my-4 cursor-pointer">
+              <article
+                key={item.id}
+                className="flex flex-col shadow my-4 cursor-pointer"
+              >
                 <div className="hover:opacity-75">
                   <Link href={`/blogs/${item.id}`}>
                     <a>
@@ -82,31 +85,6 @@ const Blog = () => {
           </div>
         </aside>
       </div>
-
-      {/* <script>
-        function getCarouselData() {
-            return {
-                currentIndex: 0,
-                images: [
-                    'https://source.unsplash.com/collection/1346951/800x800?sig=1',
-                    'https://source.unsplash.com/collection/1346951/800x800?sig=2',
-                    'https://source.unsplash.com/collection/1346951/800x800?sig=3',
-                    'https://source.unsplash.com/collection/1346951/800x800?sig=4',
-                    'https://source.unsplash.com/collection/1346951/800x800?sig=5',
-                    'https://source.unsplash.com/collection/1346951/800x800?sig=6',
-                    'https://source.unsplash.com/collection/1346951/800x800?sig=7',
-                    'https://source.unsplash.com/collection/1346951/800x800?sig=8',
-                    'https://source.unsplash.com/collection/1346951/800x800?sig=9',
-                ],
-                increment() {
-                    this.currentIndex = this.currentIndex === this.images.length - 6 ? 0 : this.currentIndex + 1;
-                },
-                decrement() {
-                    this.currentIndex = this.currentIndex === this.images.length - 6 ? 0 : this.currentIndex - 1;
-                },
-            }
-        }
-    </script> */}
     </div>
   );
 };

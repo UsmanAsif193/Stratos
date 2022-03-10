@@ -60,7 +60,7 @@ const SingleArticle = () => {
               </h2>
               <div className="flex flex-wrap -mx-2">
                 {otherBlogs.slice(0, 3).map((item) => (
-                  <div className="w-full md:w-1/3 px-2 pb-12">
+                  <div key={item.id} className="w-full md:w-1/3 px-2 pb-12">
                     <div className="h-full bg-white rounded overflow-hidden shadow-md hover:shadow-lg relative smooth">
                       <a href="#" className="no-underline hover:no-underline">
                         <img
