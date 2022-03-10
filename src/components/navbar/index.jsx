@@ -26,6 +26,7 @@ const Navbar = ({ blackColor }) => {
             <NavbarItem title={"Home"} link="/" />
             <NavbarItem title={"About Stratos"} link="/aboutStratos" />
             <NavbarItem title={"The Social Club"} link="/socialPage" />
+            <NavbarItem title={"Blogs"} link="/blogs" />
           </ul>
         </div>
         <div className="cursor-pointer">
@@ -69,6 +70,11 @@ const Navbar = ({ blackColor }) => {
               <NavbarItem
                 title={"The Social Club"}
                 link="/socialPage"
+                classProps="my-2 text-lg"
+              />
+              <NavbarItem
+                title={"Blogs"}
+                link="/blogs"
                 classProps="my-2 text-lg"
               />
               <NavbarItem
