@@ -14,13 +14,10 @@ const Blog = () => {
       </h1>
 
       <div className="container mx-auto flex flex-wrap py-6">
-        <section className="w-full md:w-2/3 flex flex-col items-center px-3">
-          {allBlogs.map((item) => {
+        {allBlogs.map((item, i) => {
+          if (i === 0 || i === 1) {
             return (
-              <article
-                key={item.id}
-                className="flex flex-col shadow my-4 cursor-pointer"
-              >
+              <div class="w-full md:w-1/2 p-4 flex flex-col flex-grow flex-shrink">
                 <div className="hover:opacity-75">
                   <Link href={`/blogs/${item.id}`}>
                     <a>
@@ -33,11 +30,7 @@ const Blog = () => {
                     <Link href={`/blogs/${item.id}`}>{item.title}</Link>
                   </div>
                   <div className="text-sm pb-3 flex ">
-                    By:
-                    <p className="font-semibold hover:text-gray-800 pl-1">
-                      <Link href={`/blogs/${item.id}`}>{item.writer}</Link>
-                    </p>
-                    <p className="pl-10">Published on {item.date}</p>
+                    <p className="">Published on {item.date}</p>
                   </div>
 
                   <div className="pb-6">
@@ -53,14 +46,47 @@ const Blog = () => {
                     </Link>
                   </div>
                 </div>
-              </article>
+              </div>
             );
-          })}
-        </section>
+          } else {
+            return (
+              <div class="w-full md:w-1/3 p-4 flex flex-col flex-grow flex-shrink">
+                <div className="hover:opacity-75">
+                  <Link href={`/blogs/${item.id}`}>
+                    <a>
+                      <img src={item.imgSrc} />
+                    </a>
+                  </Link>
+                </div>
+                <div className="flex flex-col justify-start p-6 bg-[#ececec]">
+                  <div className="text-2xl font-bold hover:text-gray-700 pb-4">
+                    <Link href={`/blogs/${item.id}`}>{item.title}</Link>
+                  </div>
+                  <div className=" pb-3 flex ">
+                    <p className="">Published on {item.date}</p>
+                  </div>
 
-        <aside className="w-full md:w-1/3 flex flex-col items-center px-3">
-          <div className="w-full bg-white shadow flex flex-col my-4 p-6 bg-[#ececec]">
-            <p className="text-xl font-semibold pb-5">About Us</p>
+                  <div className="pb-6">
+                    <Link href={`/blogs/${item.id}`}>
+                      <p className="line-clamp-5 h-full">{item.body[0].text}</p>
+                    </Link>
+                  </div>
+                  <div className="uppercase text-gray-800 hover:text-black">
+                    <Link href={`/blogs/${item.id}`}>
+                      <a>
+                        Continue Reading <i className="fas fa-arrow-right"></i>
+                      </a>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            );
+          }
+        })}
+
+        <aside className="w-full  flex flex-col items-center px-3 pt-4 ">
+          <div className=" text-white p-8 md:p-16 w-full bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+            <p className="text-2xl font-semibold pb-5 text-center ">About Us</p>
             <p>
               Jonathan Cornelius founded Stratos intending to solve a big
               problem. The problem was the lack of diverse talent in the tech
@@ -78,7 +104,7 @@ const Blog = () => {
             </p>
             <a
               href="#"
-              className="w-full bg-blue-800 text-white font-bold text-sm uppercase rounded hover:bg-blue-700 flex items-center justify-center px-2 py-3 mt-4"
+              className=" bg-blue-800 text-white font-bold text-sm uppercase rounded hover:bg-blue-700 flex items-center justify-center px-2 py-3 mt-4"
             >
               Get to know us
             </a>
