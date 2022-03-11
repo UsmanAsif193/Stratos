@@ -2,6 +2,7 @@ import { useRouter } from "next/router";
 import React from "react";
 import allBlogs from "../../components/data/blogs";
 import Navbar from "../../components/navbar";
+import Link from "next/link";
 
 const SingleArticle = () => {
   const router = useRouter();
@@ -62,20 +63,22 @@ const SingleArticle = () => {
                 {otherBlogs.slice(0, 3).map((item) => (
                   <div key={item.id} className="w-full md:w-1/3 px-2 pb-12">
                     <div className="h-full bg-white rounded overflow-hidden shadow-md hover:shadow-lg relative smooth">
-                      <a href="#" className="no-underline hover:no-underline">
-                        <img
-                          src={item.imgSrc}
-                          className="h-48 w-full rounded-t shadow-lg"
-                        />
-                        <div className="p-6 h-auto md:h-48">
-                          <div className="font-bold text-xl text-gray-900">
-                            {item.title}
+                      <Link href={`/blogs/${item.id}`}>
+                        <a className="no-underline hover:no-underline">
+                          <img
+                            src={item.imgSrc}
+                            className="h-48 w-full rounded-t shadow-lg"
+                          />
+                          <div className="p-6 h-auto md:h-48">
+                            <div className="font-bold text-xl text-gray-900">
+                              {item.title}
+                            </div>
+                            <p className="text-gray-800 font-serif line-clamp-5 h-[83%] text-base mb-5">
+                              {item.body[0].text}
+                            </p>
                           </div>
-                          <p className="text-gray-800 font-serif line-clamp-5 h-[83%] text-base mb-5">
-                            {item.body[0].text}
-                          </p>
-                        </div>
-                      </a>
+                        </a>
+                      </Link>
                     </div>
                   </div>
                 ))}
