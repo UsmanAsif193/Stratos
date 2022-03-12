@@ -17,7 +17,7 @@ const Blog = () => {
         {allBlogs.map((item, i) => {
           if (i === 0 || i === 1) {
             return (
-              <div class="w-full md:w-1/2 p-4 flex flex-col flex-grow flex-shrink  ">
+              <div className="w-full md:w-1/2 p-4 flex flex-col flex-grow flex-shrink  ">
                 <div className="shadow-3xl">
                   <div className="hover:opacity-75">
                     <Link href={`/blogs/${item.id}`}>
@@ -55,7 +55,7 @@ const Blog = () => {
             );
           } else {
             return (
-              <div class="w-full md:w-1/3 p-4 flex flex-col flex-grow flex-shrink">
+              <div className="w-full md:w-1/3 p-4 flex flex-col flex-grow flex-shrink">
                 <div className="shadow-3xl">
                   <div className="hover:opacity-75">
                     <Link href={`/blogs/${item.id}`}>
