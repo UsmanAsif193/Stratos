@@ -112,12 +112,12 @@ const Blog = () => {
               on a mission to scale this story and replicate this level of
               impact across the world.
             </p>
-            <a
+            <link
               href="/aboutStratos"
               className=" bg-blue-800 text-white font-bold text-sm uppercase rounded hover:bg-blue-700 flex items-center justify-center px-2 py-3 mt-4"
             >
               Get to know us
-            </a>
+            </link>
           </div>
         </aside>
       </div>
