@@ -17,33 +17,38 @@ const Blog = () => {
         {allBlogs.map((item, i) => {
           if (i === 0 || i === 1) {
             return (
-              <div className="w-full md:w-1/2 p-4 flex flex-col flex-grow flex-shrink">
-                <div className="hover:opacity-75">
-                  <Link href={`/blogs/${item.id}`}>
-                    <a>
-                      <img src={item.imgSrc} />
-                    </a>
-                  </Link>
-                </div>
-                <div className="flex flex-col justify-start p-6 bg-[#ececec]">
-                  <div className="text-3xl font-bold hover:text-gray-700 pb-4">
-                    <Link href={`/blogs/${item.id}`}>{item.title}</Link>
-                  </div>
-                  <div className="text-sm pb-3 flex ">
-                    <p className="">Published on {item.date}</p>
-                  </div>
-
-                  <div className="pb-6">
-                    <Link href={`/blogs/${item.id}`}>
-                      <p className="line-clamp-5 h-full">{item.body[0].text}</p>
-                    </Link>
-                  </div>
-                  <div className="uppercase text-gray-800 hover:text-black">
+              <div className="w-full md:w-1/2 p-4 flex flex-col flex-grow flex-shrink  ">
+                <div className="shadow-3xl">
+                  <div className="hover:opacity-75">
                     <Link href={`/blogs/${item.id}`}>
                       <a>
-                        Continue Reading <i className="fas fa-arrow-right"></i>
+                        <img src={item.imgSrc} />
                       </a>
                     </Link>
+                  </div>
+                  <div className="flex flex-col justify-start p-6 bg-[#ececec]">
+                    <div className="text-3xl font-bold hover:text-gray-700 pb-4">
+                      <Link href={`/blogs/${item.id}`}>{item.title}</Link>
+                    </div>
+                    <div className="text-sm pb-3 flex ">
+                      <p className="">Published on {item.date}</p>
+                    </div>
+
+                    <div className="pb-6">
+                      <Link href={`/blogs/${item.id}`}>
+                        <p className="line-clamp-5 h-full">
+                          {item.body[0].text}
+                        </p>
+                      </Link>
+                    </div>
+                    <div className="uppercase text-gray-800 hover:text-black">
+                      <Link href={`/blogs/${item.id}`}>
+                        <a>
+                          Continue Reading{" "}
+                          <i className="fas fa-arrow-right"></i>
+                        </a>
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -51,32 +56,37 @@ const Blog = () => {
           } else {
             return (
               <div className="w-full md:w-1/3 p-4 flex flex-col flex-grow flex-shrink">
-                <div className="hover:opacity-75">
-                  <Link href={`/blogs/${item.id}`}>
-                    <a>
-                      <img src={item.imgSrc} />
-                    </a>
-                  </Link>
-                </div>
-                <div className="flex flex-col justify-start p-6 bg-[#ececec]">
-                  <div className="text-2xl font-bold hover:text-gray-700 pb-4">
-                    <Link href={`/blogs/${item.id}`}>{item.title}</Link>
-                  </div>
-                  <div className=" pb-3 flex ">
-                    <p className="">Published on {item.date}</p>
-                  </div>
-
-                  <div className="pb-6">
-                    <Link href={`/blogs/${item.id}`}>
-                      <p className="line-clamp-5 h-full">{item.body[0].text}</p>
-                    </Link>
-                  </div>
-                  <div className="uppercase text-gray-800 hover:text-black">
+                <div className="shadow-3xl">
+                  <div className="hover:opacity-75">
                     <Link href={`/blogs/${item.id}`}>
                       <a>
-                        Continue Reading <i className="fas fa-arrow-right"></i>
+                        <img src={item.imgSrc} />
                       </a>
                     </Link>
+                  </div>
+                  <div className="flex flex-col justify-start p-6 bg-[#ececec]">
+                    <div className="text-2xl font-bold hover:text-gray-700 pb-4">
+                      <Link href={`/blogs/${item.id}`}>{item.title}</Link>
+                    </div>
+                    <div className=" pb-3 flex ">
+                      <p className="">Published on {item.date}</p>
+                    </div>
+
+                    <div className="pb-6">
+                      <Link href={`/blogs/${item.id}`}>
+                        <p className="line-clamp-5 h-full">
+                          {item.body[0].text}
+                        </p>
+                      </Link>
+                    </div>
+                    <div className="uppercase text-gray-800 hover:text-black">
+                      <Link href={`/blogs/${item.id}`}>
+                        <a>
+                          Continue Reading{" "}
+                          <i className="fas fa-arrow-right"></i>
+                        </a>
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -85,7 +95,7 @@ const Blog = () => {
         })}
 
         <aside className="w-full  flex flex-col items-center px-3 pt-4 ">
-          <div className=" text-white p-8 md:p-16 w-full bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+          <div className=" text-white p-8 md:p-16 w-full bg-white rounded-lg shadow-xl border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
             <p className="text-2xl font-semibold pb-5 text-center ">About Us</p>
             <p>
               Jonathan Cornelius founded Stratos intending to solve a big
@@ -102,12 +112,12 @@ const Blog = () => {
               on a mission to scale this story and replicate this level of
               impact across the world.
             </p>
-            <a
-              href="#"
+            <link
+              href="/aboutStratos"
               className=" bg-blue-800 text-white font-bold text-sm uppercase rounded hover:bg-blue-700 flex items-center justify-center px-2 py-3 mt-4"
             >
               Get to know us
-            </a>
+            </link>
           </div>
         </aside>
       </div>
