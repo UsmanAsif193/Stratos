@@ -14,6 +14,9 @@ module.exports = {
           "linear-gradient(to left, rgb(255 255 255 / 100%), rgb(223 223 223 / 80%)),url(/assets/Futurism-Background7.jpg)",
         "partner-1": "/assets/partners/kyte-hover.svg",
       },
+      boxShadow: {
+        "3xl": "0 27px 80px -12px rgb(0 0 0 / 0.5)",
+      },
     },
   },
   plugins: [],
