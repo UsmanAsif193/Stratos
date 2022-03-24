@@ -3,7 +3,7 @@ import { db } from "../../firebase";
 import { collection, addDoc } from "firebase/firestore";
 import SuccessCard from "../SuccessCard";
 
-const JoinStratosForm = () => {
+const WaitListForm = () => {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const handleJoinInput = (e) => {
@@ -58,4 +58,4 @@ const JoinStratosForm = () => {
   );
 };
 
-export default JoinStratosForm;
+export default WaitListForm;
