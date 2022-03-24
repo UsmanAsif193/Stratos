@@ -12,11 +12,11 @@ const WaitList = () => {
     slidesToScroll: 1,
   };
   return (
-    <div className="h-screen bg-cloud-image-index bg-cover text-white lg:overflow-hidden">
+    <div className="md:h-screen bg-cloud-image-index bg-cover text-white lg:overflow-hidden">
       <Fade top>
-        <div className="h-full">
+        <div className="md:h-full">
           <Navbar />
-          <div className="grid grid-cols-1 lg:grid-cols-2 h-full">
+          <div className="grid grid-cols-1 lg:grid-cols-2">
             <div className="h-full flex items-start justify-start flex-col px-4 lg:px-28 pt-32  ">
               <div className="text-3xl lg:text-4xl font-bold ">
                 Stratos is launching its mobile app on June 1st
@@ -79,8 +79,8 @@ const WaitList = () => {
                 </button>
               </div>
             </div>
-            <div className="py-20">
-              <div className="h-64 w-64 m-auto">
+            <div className="py-20 h-full">
+              <div className="h-1/2 w-2/3 md:h-64 md:w-64 m-auto">
                 <WaitListSlider />
               </div>
             </div>
