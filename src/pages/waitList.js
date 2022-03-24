@@ -6,7 +6,7 @@ import WaitListSlider from "../components/waitListSlider";
 
 const WaitList = () => {
   return (
-    <div className="md:h-screen bg-cloud-image-index bg-cover text-white lg:overflow-hidden">
+    <div className="md:h-screen bg-cloud-image-index bg-cover text-white xl:overflow-hidden">
       <Fade top>
         <div className="md:h-full">
           <Navbar />
