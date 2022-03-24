@@ -6,10 +6,10 @@ import OurPartners from "../components/ourPartners";
 
 const signUp = () => {
   return (
-    <div  className="h-half bg-cloud-image-index bg-cover text-white">
-    <Fade top>
-    <div   className="min-h-screen">
-        <Navbar  />
+    <div className="h-half bg-cloud-image-index bg-cover text-white">
+      <Fade top>
+        <div className="min-h-screen">
+          <Navbar />
           <GuestList />
         </div>
       </Fade>
