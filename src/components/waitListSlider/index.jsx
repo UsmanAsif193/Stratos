@@ -18,8 +18,8 @@ const WaitListSlider = () => {
     <div>
       <Slider {...settings}>
         <img src={"./assets/slider-image-1.png"} alt="" />
-        <img src={"./assets/slider-image-1.png"} alt="" />
-        <img src={"./assets/slider-image-1.png"} alt="" />
+        <img src={"./assets/slider-image-2.png"} alt="" />
+        <img src={"./assets/slider-image-3.png"} alt="" />
       </Slider>
     </div>
   );
