@@ -10,8 +10,8 @@ const WaitList = () => {
     <div className="md:h-screen bg-cloud-image-index bg-cover text-white xl:overflow-hidden">
       <Fade top>
         <div className="md:h-full">
-          <h1 className="tracking-[.7rem] text-2xl md:text-4xl uppercase font-extralight text-center pt-8">
-            <Link href={"/"}>Welcome To Stratos</Link>
+          <h1 className=" tracking-[.7rem] text-lg uppercase font-extralight pl-6 md:pl-24 pt-8">
+            <Link href={"/"}>Stratos</Link>
           </h1>
           <div className="grid grid-cols-1 lg:grid-cols-2 2xl:h-full">
             <div className="h-full flex items-start justify-start flex-col 2xl:justify-center 2xl:pt-0 2xl:pb-20 px-4 lg:px-28 pt-28  ">
