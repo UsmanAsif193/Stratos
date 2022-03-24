@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import Slider from "react-slick";
 
@@ -16,15 +17,9 @@ const WaitListSlider = () => {
   return (
     <div>
       <Slider {...settings}>
-        <div>
-          <img src={"./assets/slider-image-1.png"} alt="" />
-        </div>
-        <div>
-          <img src={"./assets/slider-image-1.png"} alt="" />
-        </div>
-        <div>
-          <img src={"./assets/slider-image-1.png"} alt="" />
-        </div>
+        <img src={"./assets/slider-image-1.png"} alt="" />
+        <img src={"./assets/slider-image-1.png"} alt="" />
+        <img src={"./assets/slider-image-1.png"} alt="" />
       </Slider>
     </div>
   );

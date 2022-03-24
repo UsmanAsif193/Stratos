@@ -1,50 +1,29 @@
 import React, { useState } from "react";
-import { db } from "../../firebase";
-import { collection, addDoc } from "firebase/firestore";
-import SuccessCard from "../SuccessCard";
 
 const WaitListForm = () => {
-  const [email, setEmail] = useState("");
-  const [name, setName] = useState("");
-  const handleJoinInput = (e) => {
-    setJoinInput(e.target.value);
-  };
-  const updateDBJoin = async (e) => {
-    e.preventDefault();
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
 
-    try {
-      const docRef = await addDoc(collection(db, "Name_Email"), {
-        email: email,
-        name: name,
-      });
-
-      setEmail("");
-      setName("");
-      SuccessCard();
-    } catch (e) {
-      console.error("Error adding document: ", e);
-    }
-  };
   return (
     <div>
-      <form onSubmit={updateDBJoin}>
+      <form>
         <input
-          value={name}
+          value={firstName}
           type="text"
           className={` appearance-none placeholder-black block w-80 bg-white text-black border
               border-gray-300 rounded-xl border-0 shadow-md py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-gray-100`}
-          placeholder="Name"
+          placeholder="First Name"
           required
-          onChange={(e) => setName(e.target.value)}
+          onChange={(e) => setFirstName(e.target.value)}
         />
         <input
-          value={email}
-          type="email"
+          value={lastName}
+          type="text"
           className={`  placeholder-black block w-80 bg-white text-black border
               border-gray-300 rounded-xl border-0 shadow-md py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-gray-100`}
           required
-          placeholder="Email"
-          onChange={(e) => setEmail(e.target.value)}
+          placeholder="Last Name"
+          onChange={(e) => setLastName(e.target.value)}
         />
         <div className=" right-50 cennter top-0 ">
           <input
