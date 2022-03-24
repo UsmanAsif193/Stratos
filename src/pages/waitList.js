@@ -12,8 +12,11 @@ const WaitList = () => {
           <Navbar />
           <div className="grid grid-cols-1 lg:grid-cols-2 2xl:h-full">
             <div className="h-full flex items-start justify-start flex-col 2xl:justify-center 2xl:pt-0 2xl:pb-20 px-4 lg:px-28 pt-28  ">
-              <div className="text-3xl lg:text-5xl font-bold ">
-                Stratos is Launching 06/01/2022
+              <div className="text-3xl lg:text-5xl font-bold  ">
+                Stratos is Launching{" "}
+                <span className=" tracking-[.3rem] uppercase font-extralight">
+                  06/01/2022
+                </span>
               </div>
               <div className="text-xl lg:text-2xl pt-10">
                 A social platform for Black & Latinx professionals It’s straight
