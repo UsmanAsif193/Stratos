@@ -4,9 +4,9 @@ import { collection, addDoc } from "firebase/firestore";
 import SuccessCard from "../SuccessCard";
 
 const JoinStratos = () => {
-   const [email, setEmail] = useState("");
-   const [name,setName] = useState("");
-   const handleJoinInput = (e) => {
+  const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
+  const handleJoinInput = (e) => {
     setJoinInput(e.target.value);
   };
   const updateDBJoin = async (e) => {
