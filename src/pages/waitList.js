@@ -23,8 +23,8 @@ const WaitList = () => {
                 <WaitListForm />
               </div>
             </div>
-            <div className="py-20 2xl:py-40 h-full">
-              <div className="h-1/2 w-2/3 md:h-72 md:w-[20rem] m-auto">
+            <div className="py-20 2xl:py-28 h-full">
+              <div className="h-1/2 w-2/3  md:h-72 md:w-72 m-auto">
                 <WaitListSlider />
               </div>
             </div>
